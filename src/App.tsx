@@ -1,53 +1,41 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./less/App.less";
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
+import AboutMe from "./pages/AboutMe";
+import Products from "./pages/Products";
+import Gallery from "./pages/Gallery";
+import "./less/app.less";
 
 export default function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link className="" to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+      <div className="nav-wrapper">
+        <Link className="nav-btn slogon-text" to="/">
+          Lishuang's
+        </Link>
+        <NavLink className="nav-btn" activeClassName="active" to="/products">
+          Products
+        </NavLink>
+        <span className="split-text">/</span>
+        <NavLink className="nav-btn" activeClassName="active" to="/gallery">
+          Gallery
+        </NavLink>
+      </div>
 
+      <div className="page-container">
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/products">
+            <Products />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/gallery">
+            <Gallery />
           </Route>
           <Route path="/">
-            <Home />
+            <AboutMe />
           </Route>
         </Switch>
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
