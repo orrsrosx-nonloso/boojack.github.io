@@ -4,17 +4,17 @@ import "../less/gallery.less";
 const Gallery: React.FunctionComponent = () => {
   const pictures: Model.Picture[] = [
     {
-      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/bytedance.jpg",
+      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/bytedance-min.jpg",
       title: "bytedance",
-      description: "",
+      description: "As an old memo says: 'Byte / heart dance.'",
     },
     {
-      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/photographer.jpg",
+      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/photographer-min.jpg",
       title: "photographer",
       description: "An old photographer in Beijing.",
     },
     {
-      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/windows.jpg",
+      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/windows-min.jpg",
       title: "windows",
       description: "The sky in two windows.",
     },
@@ -29,14 +29,13 @@ const Gallery: React.FunctionComponent = () => {
       <div className="pictures-wrapper">
         {pictures.map((picture) => (
           <div key={picture.url} className="picture-container">
-            <img className="img" src={picture.url} decoding="async" referrerPolicy="no-referrer" loading="lazy" />
-            <p className="name-text">{picture.title}</p>
-            <p className="desc-text">{picture.description}</p>
-            <p className="url-text">
+            <img className="img" src={picture.url} alt={picture.title} decoding="async" referrerPolicy="no-referrer" loading="lazy" />
+            <p className="name-text">
               <a target="_blank" href={picture.url}>
-                link
+                {picture.title}
               </a>
             </p>
+            <p className="desc-text">{picture.description}</p>
           </div>
         ))}
         <p>

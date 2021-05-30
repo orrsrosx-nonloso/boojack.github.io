@@ -37,7 +37,7 @@ const Products: React.FunctionComponent = () => {
           </div>
         ))}
         <p>
-          ... <i>waiting to continue</i>
+          ... <i>and so on</i>
         </p>
       </div>
     </div>
