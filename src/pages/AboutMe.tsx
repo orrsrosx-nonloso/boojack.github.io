@@ -10,30 +10,34 @@ const AboutMe: React.FunctionComponent = () => {
       <h1>
         I'm <span className="name-text">Lishuang</span>,
       </h1>
-      <h2>A student in USTC,</h2>
-      <h2>A enjoyer of Making Products,</h2>
       <h2>
-        A fan of Reading, Travelling, ..., and Life.<span className="icon-text">🤠</span>
+        A student in USTC,
+        <br />A enjoyer of Dev Products,
+        <br />A beginner of Photograph,
+        <br />A fan of Reading, Travelling, ..., and Life.<span className="icon-text">🤠</span>
       </h2>
       <span className="slice-text">-----</span>
-      <div className="contacts-container">
-        <h3>Contacts:</h3>
-        <li>
-          email:{"  "}
-          <a href="mailto:imrealleonardo@gmail.com">imrealleonardo@gmail.com</a>
-        </li>
-        <li>
+      <div className="section-container">
+        <p className="title-text">Contacts:</p>
+        <p className="contact-item">
+          <img src="/icons/github.svg" className="icon-img" />
           Github:{"  "}
           <a target="_black" href="https://github.com/boojack">
             boojack
           </a>
-        </li>
-        <li>
+        </p>
+        <p className="contact-item">
+          <img src="/icons/bilibili.svg" className="icon-img" />
           bilibili:{"  "}
           <a target="_black" href="https://space.bilibili.com/2064763">
             每天都好想学习
           </a>
-        </li>
+        </p>
+        <p className="contact-item">
+          <img src="/icons/email.svg" className="icon-img" />
+          E-mail:{"  "}
+          <a href="mailto:imrealleonardo@gmail.com">imrealleonardo@gmail.com</a>
+        </p>
       </div>
     </div>
   );

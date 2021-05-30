@@ -17,9 +17,10 @@ const Products: React.FunctionComponent = () => {
 
   return (
     <div className="page-content-container products">
-      <h2>I always think about the product made by myself.</h2>
       <h2>
-        And I made it finally. <span className="icon-text">🎉</span>
+        I always think about making a product by myself,
+        <br />
+        and I made it finally. <span className="icon-text">🎉</span>
       </h2>
 
       <div className="products-wrapper">
@@ -36,7 +37,7 @@ const Products: React.FunctionComponent = () => {
           </div>
         ))}
         <p>
-          ... <i>to be continue</i>
+          ... <i>waiting to continue</i>
         </p>
       </div>
     </div>

@@ -1,3 +1,5 @@
+@import "./mixin.less";
+
 .page-content-container.about-me {
   width: 100%;
   display: flex;
@@ -9,23 +11,54 @@
     padding: 0 4px;
   }
 
+  .name-text {
+    padding: 0 4px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid @text-blue;
+  }
+
   > .slice-text {
     margin: 12px 0;
     color: rgay;
     letter-spacing: 2px;
   }
 
-  > .contacts-container {
+  > .section-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
-    > h3 {
-      padding: 4px 0;
+    > .title-text {
+      font-size: 18px;
+      padding: 6px 0;
     }
 
     > li,
     > p {
-      font-size: 18px;
-      line-height: 1.8;
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    > .contact-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 4px;
+
+      > .icon-img {
+        margin: 0 4px;
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+      }
+
+      > a {
+        margin-left: 4px;
+      }
     }
   }
 }

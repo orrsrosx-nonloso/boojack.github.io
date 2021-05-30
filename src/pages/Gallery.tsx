@@ -29,18 +29,18 @@ const Gallery: React.FunctionComponent = () => {
       <div className="pictures-wrapper">
         {pictures.map((picture) => (
           <div key={picture.url} className="picture-container">
-            <img className="img" src={picture.url} alt="" />
+            <img className="img" src={picture.url} decoding="async" referrerPolicy="no-referrer" loading="lazy" />
             <p className="name-text">{picture.title}</p>
             <p className="desc-text">{picture.description}</p>
             <p className="url-text">
               <a target="_blank" href={picture.url}>
-                <i>link</i>
+                link
               </a>
             </p>
           </div>
         ))}
         <p>
-          ... <i>to be continue</i>
+          ... <i>waiting to continue</i>
         </p>
       </div>
     </div>
