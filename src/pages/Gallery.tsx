@@ -25,7 +25,7 @@ const Gallery: React.FunctionComponent = () => {
   return (
     <div className="page-content-container gallery">
       <h2>
-        Maybe not good at first sight, <br /> but will be enjoyable at next sight. <span className="icon-text">📷</span>
+        Maybe not good at first sight, <br /> but will be enjoyable in the next sights. <span className="icon-text">📷</span>
       </h2>
 
       <div className="pictures-wrapper">

@@ -3,6 +3,8 @@ declare namespace Model {
     name: string;
     url: string;
     description: string;
+    opensource: boolean;
+    repositoryUrl?: string;
   }
 
   interface Picture {

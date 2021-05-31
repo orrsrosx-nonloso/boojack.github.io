@@ -39,14 +39,33 @@
     align-items: flex-start;
 
     > .title-text {
-      font-size: 18px;
-      padding: 6px 0;
+      font-size: 16px;
+      padding: 8px 0;
+      margin-bottom: 4px;
+      color: gray;
     }
 
-    > li,
-    > p {
+    > .info-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
       font-size: 16px;
-      line-height: 2;
+      margin-bottom: 6px;
+
+      > a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 4px;
+
+        .icon-img {
+          margin-right: 8px;
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
 
     > .contact-item {
@@ -55,7 +74,7 @@
       justify-content: flex-start;
       align-items: center;
       font-size: 16px;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
 
       > .icon-img {
         margin: 0 4px;
