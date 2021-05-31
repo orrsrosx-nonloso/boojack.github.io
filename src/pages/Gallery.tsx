@@ -1,7 +1,7 @@
 import React from "react";
 import "../less/gallery.less";
 
-const BASE_CDN_URL = "https://cdn.justsven.top/";
+const BASE_CDN_URL = "http://cdn.justsven.top/";
 
 const Gallery: React.FunctionComponent = () => {
   const pictures: Model.Picture[] = [
