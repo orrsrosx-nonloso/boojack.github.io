@@ -1,20 +1,22 @@
 import React from "react";
 import "../less/gallery.less";
 
+const BASE_CDN_URL = "https://cdn.justsven.top/";
+
 const Gallery: React.FunctionComponent = () => {
   const pictures: Model.Picture[] = [
     {
-      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/bytedance-min.jpg",
+      url: BASE_CDN_URL + "bytedance-min.jpg",
       title: "bytedance",
       description: "As an old memo says: 'Byte / heart dance.'",
     },
     {
-      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/photographer-min.jpg",
+      url: BASE_CDN_URL + "photographer-min.jpg",
       title: "photographer",
       description: "An old photographer in Beijing.",
     },
     {
-      url: "https://justsven-1252712135.cos.ap-shanghai.myqcloud.com/mine-site/windows-min.jpg",
+      url: BASE_CDN_URL + "windows-min.jpg",
       title: "windows",
       description: "The sky in two windows.",
     },
@@ -23,7 +25,7 @@ const Gallery: React.FunctionComponent = () => {
   return (
     <div className="page-content-container gallery">
       <h2>
-        Maybe not good at first sight, but enjoyable at next sight. <span className="icon-text">📷</span>
+        Maybe not good at first sight, <br /> but will be enjoyable at next sight. <span className="icon-text">📷</span>
       </h2>
 
       <div className="pictures-wrapper">

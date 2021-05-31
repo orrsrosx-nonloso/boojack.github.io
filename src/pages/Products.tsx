@@ -20,7 +20,7 @@ const Products: React.FunctionComponent = () => {
       <h2>
         I always think about making a product by myself,
         <br />
-        and I made it finally. <span className="icon-text">🎉</span>
+        and made it finally. <span className="icon-text">🎉</span>
       </h2>
 
       <div className="products-wrapper">

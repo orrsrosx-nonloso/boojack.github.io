@@ -12,13 +12,21 @@ const AboutMe: React.FunctionComponent = () => {
       </h1>
       <h2>
         A student in USTC,
-        <br />A enjoyer of Dev Products,
         <br />A beginner of Photograph,
+        <br />
+        An enjoyer to Make Products,
         <br />A fan of Reading, Travelling, ..., and Life.<span className="icon-text">🤠</span>
       </h2>
       <span className="slice-text">-----</span>
       <div className="section-container">
-        <p className="title-text">Contacts:</p>
+        <p className="title-text">Other sites:</p>
+        <p className="contact-item">
+          <img src="/icons/notion.svg" className="icon-img" />
+          Notion:{"  "}
+          <a target="_black" href="https://www.notion.so/Home-bdf52857b85b44a89b67a0b7fd9ec74c">
+            Justfakemoz
+          </a>
+        </p>
         <p className="contact-item">
           <img src="/icons/github.svg" className="icon-img" />
           Github:{"  "}
@@ -28,7 +36,7 @@ const AboutMe: React.FunctionComponent = () => {
         </p>
         <p className="contact-item">
           <img src="/icons/bilibili.svg" className="icon-img" />
-          bilibili:{"  "}
+          Bilibili:{"  "}
           <a target="_black" href="https://space.bilibili.com/2064763">
             每天都好想学习
           </a>
