@@ -34,12 +34,12 @@ const AboutMe: React.FunctionComponent = () => {
         A student in USTC,
         <br />A beginner of Photograph,
         <br />
-        An enjoyer to Make Products,
+        An enjoyer of Making Products,
         <br />A fan of Reading, Travelling, ..., and Life.<span className="icon-text">🤠</span>
       </h2>
       <span className="slice-text">-----</span>
       <div className="section-container">
-        <p className="title-text">Informations:</p>
+        <p className="title-text">Information:</p>
         <p className="info-item">
           Name:{"  "}
           Lishuang

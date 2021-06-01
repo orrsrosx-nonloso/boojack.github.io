@@ -24,7 +24,7 @@ export default function App() {
     <Router>
       <div className="nav-wrapper">
         <Link
-          className="nav-btn slogon-text"
+          className="nav-btn slogan-text"
           to="/site"
           onClick={() => {
             handleNavLinkClick("site");
