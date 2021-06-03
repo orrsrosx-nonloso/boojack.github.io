@@ -4,8 +4,7 @@ import "../less/about-me.less";
 const birthDayTimestamp = new Date("1998/7/25 23:59:59").getTime();
 function getAge() {
   const nowTimestamp = Date.now();
-  const age = ((nowTimestamp - birthDayTimestamp) / 1000 / 3600 / 24 / 365).toFixed(8);
-
+  const age = ((nowTimestamp - birthDayTimestamp) / 1000 / 3600 / 24 / 365).toFixed(10);
   return age;
 }
 
@@ -13,12 +12,16 @@ const AboutMe: React.FunctionComponent = () => {
   const [age, setAge] = useState(getAge());
 
   useEffect(() => {
-    const timeId = setInterval(() => {
+    let timeId = 0;
+
+    const updateAge = () => {
       setAge(getAge());
-    }, 1000);
+      timeId = requestAnimationFrame(updateAge);
+    };
+    timeId = requestAnimationFrame(updateAge);
 
     return () => {
-      clearInterval(timeId);
+      window.cancelAnimationFrame(timeId);
     };
   }, []);
 
