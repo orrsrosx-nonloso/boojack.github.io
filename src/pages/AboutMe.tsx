@@ -35,7 +35,8 @@ const AboutMe: React.FunctionComponent = () => {
       </h1>
       <h2>
         A student in USTC,
-        <br />A beginner of Photograph,
+        <br />
+        A beginner in Photography,
         <br />
         An enjoyer of Making Products,
         <br />A fan of Reading, Travelling, ..., and Life.<span className="icon-text">🤠</span>

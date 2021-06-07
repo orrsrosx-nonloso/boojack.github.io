@@ -17,6 +17,13 @@ const Products: React.FunctionComponent = () => {
       opensource: true,
       repositoryUrl: "https://github.com/boojack/v2ex-daily-hot-topic-web",
     },
+    {
+      name: "ad banner",
+      url: "",
+      description: "AD banner in Android. ...waiting to be dev",
+      opensource: false,
+      repositoryUrl: "",
+    },
   ];
 
   return (
@@ -31,16 +38,24 @@ const Products: React.FunctionComponent = () => {
         {products.map((product) => (
           <div key={product.url} className="product-container">
             <p className="name-text">
-              <a target="_blank" href={product.url}>
-                {product.name}
-              </a>
+              {product.url ? (
+                <a target="_blank" href={product.url}>
+                  {product.name}
+                </a>
+              ) : (
+                product.name
+              )}
             </p>
             <p className="desc-text">{product.description}</p>
             <p className="repo-text">
-              <a className="url-text link" target="_black" href={product.url}>
-                Online Link
-              </a>
-              <span className="split-text">/</span>
+              {product.url ? (
+                <>
+                  <a className="url-text link" target="_black" href={product.url}>
+                    Online Link
+                  </a>
+                  <span className="split-text">/</span>
+                </>
+              ) : null}
               {product.opensource ? (
                 <a className="url-text" target="_black" href={product.repositoryUrl}>
                   <img src="/icons/github.svg" className="icon-img" />
