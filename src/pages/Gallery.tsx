@@ -6,6 +6,16 @@ const BASE_CDN_URL = "http://cdn.justsven.top/";
 const Gallery: React.FunctionComponent = () => {
   const pictures: Model.Picture[] = [
     {
+      url: BASE_CDN_URL + "sky-wuhan-min.jpg",
+      title: "blue sky",
+      description: "",
+    },
+    {
+      url: BASE_CDN_URL + "sunshine-ustc-min.jpg",
+      title: "sunset",
+      description: "",
+    },
+    {
       url: BASE_CDN_URL + "bytedance-min.jpg",
       title: "bytedance",
       description: "As an old memo says: 'Byte / heart dance.'",
