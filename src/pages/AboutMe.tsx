@@ -4,7 +4,7 @@ import "../less/about-me.less";
 const birthDayTimestamp = new Date("1998/7/25 23:59:59").getTime();
 function getAge() {
   const nowTimestamp = Date.now();
-  const age = ((nowTimestamp - birthDayTimestamp) / 1000 / 3600 / 24 / 365).toFixed(10);
+  const age = ((nowTimestamp - birthDayTimestamp) / 1000 / 3600 / 24 / 365).toFixed(9);
   return age;
 }
 

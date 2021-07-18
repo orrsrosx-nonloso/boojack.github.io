@@ -4,8 +4,8 @@ import "../less/products.less";
 const Products: React.FunctionComponent = () => {
   const products: Model.Product[] = [
     {
-      name: "insmemo",
-      url: "https://insmemo.justsven.top/",
+      name: "Memos",
+      url: "https://memos.justsven.top/",
       description: "A succinct and stressless e-notebook inspired by flomo and zsxq.",
       opensource: true,
       repositoryUrl: "https://github.com/boojack/insmemo",
@@ -18,9 +18,9 @@ const Products: React.FunctionComponent = () => {
       repositoryUrl: "https://github.com/boojack/v2ex-daily-hot-topic-web",
     },
     {
-      name: "ad banner",
+      name: "Notes",
       url: "",
-      description: "AD banner in Android. ...waiting to be dev",
+      description: "Brilliant notes book with markdown. ...waiting to be dev",
       opensource: false,
       repositoryUrl: "",
     },
@@ -66,7 +66,10 @@ const Products: React.FunctionComponent = () => {
           </div>
         ))}
         <p>
-          ... <i>and so on</i>
+          ... See more at{" "}
+          <a target="_black" href="https://github.com/boojack">
+            My Github
+          </a>
         </p>
       </div>
     </div>
