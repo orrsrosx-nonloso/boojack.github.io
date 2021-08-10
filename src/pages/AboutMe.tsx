@@ -93,6 +93,14 @@ const AboutMe: React.FunctionComponent = () => {
           </a>
         </p>
       </div>
+      <span className="slice-text">-----</span>
+      <div className="section-container">
+        <p className="contact-item">
+          <a target="_black" href="https://beian.miit.gov.cn">
+            鄂ICP备2021009299号-1
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
