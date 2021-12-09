@@ -31,7 +31,7 @@ const AboutMe: React.FunctionComponent = () => {
         Hi there <span className="icon-text">👋</span>,
       </h2>
       <h1>
-        I'm <span className="name-text">Lishuang</span>,
+        I'm <span className="name-text">Steven</span>,
       </h1>
       <h2>
         A student in USTC,
@@ -46,7 +46,7 @@ const AboutMe: React.FunctionComponent = () => {
         <p className="title-text">Information:</p>
         <p className="info-item">
           Name:{"  "}
-          Lishuang
+          Steven
         </p>
         <p className="info-item">
           Gender:{"  "}

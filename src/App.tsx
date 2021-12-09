@@ -10,14 +10,14 @@ export default function App() {
     const param = location.hash.slice(2);
 
     if (["site", "products", "gallery"].includes(param)) {
-      document.title = "Lishuang's " + param;
+      document.title = "Steven's " + param;
     } else {
-      document.title = "Lishuang's site";
+      document.title = "Steven's site";
     }
   }, []);
 
   const handleNavLinkClick = (param: string) => {
-    document.title = "Lishuang's " + param;
+    document.title = "Steven's " + param;
   };
 
   return (
@@ -30,7 +30,7 @@ export default function App() {
             handleNavLinkClick("site");
           }}
         >
-          Lishuang's
+          Steven's
         </Link>
         <NavLink
           className="nav-btn"
