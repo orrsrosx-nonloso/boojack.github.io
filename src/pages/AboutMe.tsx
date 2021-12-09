@@ -63,7 +63,7 @@ const AboutMe: React.FunctionComponent = () => {
         <p className="info-item">
           E-mail:{"  "}
           <a href="mailto:imrealleonardo@gmail.com">
-            <img src="/icons/email.svg" className="icon-img" />
+            <img src="./icons/email.svg" className="icon-img" />
             imrealleonardo@gmail.com
           </a>
         </p>
@@ -72,21 +72,21 @@ const AboutMe: React.FunctionComponent = () => {
       <div className="section-container">
         <p className="title-text">Other sites:</p>
         <p className="contact-item">
-          <img src="/icons/notion.svg" className="icon-img" />
+          <img src="./icons/notion.svg" className="icon-img" />
           Notion:{"  "}
           <a target="_black" href="https://www.notion.so/Home-bdf52857b85b44a89b67a0b7fd9ec74c">
             Justfakemoz
           </a>
         </p>
         <p className="contact-item">
-          <img src="/icons/github.svg" className="icon-img" />
+          <img src="./icons/github.svg" className="icon-img" />
           Github:{"  "}
           <a target="_black" href="https://github.com/boojack">
             boojack
           </a>
         </p>
         <p className="contact-item">
-          <img src="/icons/bilibili.svg" className="icon-img" />
+          <img src="./icons/bilibili.svg" className="icon-img" />
           Bilibili:{"  "}
           <a target="_black" href="https://space.bilibili.com/2064763">
             每天都好想学习

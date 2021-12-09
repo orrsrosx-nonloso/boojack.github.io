@@ -58,7 +58,7 @@ const Products: React.FunctionComponent = () => {
               ) : null}
               {product.opensource ? (
                 <a className="url-text" target="_black" href={product.repositoryUrl}>
-                  <img src="/icons/github.svg" className="icon-img" />
+                  <img src="./icons/github.svg" className="icon-img" />
                   {"  "}Source code
                 </a>
               ) : null}
