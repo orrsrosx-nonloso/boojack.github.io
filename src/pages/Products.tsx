@@ -6,9 +6,9 @@ const Products: React.FunctionComponent = () => {
     {
       name: "Memos",
       url: "https://memos.justsven.top/",
-      description: "A succinct and stressless e-notebook inspired by flomo and zsxq.",
+      description: "An open-source alternative to flomo.",
       opensource: true,
-      repositoryUrl: "https://github.com/boojack/insmemo",
+      repositoryUrl: "https://github.com/JustMemos/memos",
     },
     {
       name: "v2ex daily hot topics",
