@@ -1,3 +1,0 @@
-# Mine Site
-
-Personal website.
