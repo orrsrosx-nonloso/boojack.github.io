@@ -5,10 +5,17 @@ const Products: React.FunctionComponent = () => {
   const products: Model.Product[] = [
     {
       name: "Memos",
-      url: "https://memos.justsven.top/",
+      url: "https://memos.onrender.com/",
       description: "An open-source alternative to flomo.",
       opensource: true,
-      repositoryUrl: "https://github.com/JustMemos/memos",
+      repositoryUrl: "https://github.com/justMemos/memos",
+    },
+    {
+      name: "Sticky notes",
+      url: "https://sticky-notes.onrender.com/",
+      description: "Classical style sticky note cards.",
+      opensource: true,
+      repositoryUrl: "https://github.com/justMemos/sticky-notes",
     },
     {
       name: "v2ex daily hot topics",
@@ -16,13 +23,6 @@ const Products: React.FunctionComponent = () => {
       description: "V2EX daily hot topics.",
       opensource: true,
       repositoryUrl: "https://github.com/boojack/v2ex-daily-hot-topic-web",
-    },
-    {
-      name: "Notes",
-      url: "",
-      description: "Brilliant notes book with markdown. ...waiting to be dev",
-      opensource: false,
-      repositoryUrl: "",
     },
   ];
 
